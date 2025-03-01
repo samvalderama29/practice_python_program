@@ -1,8 +1,9 @@
 # Prog07: Create a program that ask user to input 10 numbers. Print the sum of all the numbers.
 
-num1 = int(input("First number: "))
-num2 = int(input("Second number: "))
+all_num = 0
 
-raisenum = num1**num2
+for i in range(10):
+    num = float(input(f"Enter number {i + 1}: "))
+    all_num += num
 
-print(raisenum)
+print(f"Sum of all numbers: {all_num}")
